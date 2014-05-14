@@ -500,7 +500,7 @@ $.fcdp = {
 		if (!response) {
 			var clazz = "day" + (day_opts.is_weekend ? " weekend" : "") + (day_opts.is_current ? " current" : "");
 			if (day_opts.is_clickable) {
-				response = '<a href="#' + day_num + '" class="' + clazz + '" data-date="' + day_opts.date.format() + '">' + day_num + '</a>';
+				response = '<a class="' + clazz + '" data-date="' + day_opts.date.format() + '">' + day_num + '</a>';
 			} else {
 				response = '<span class="' + clazz + '" data-date="' + day_opts.date.format() + '">' + day_num + '</span>';
 			}

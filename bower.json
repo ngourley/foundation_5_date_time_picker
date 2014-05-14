@@ -19,6 +19,7 @@
   "dependencies": {
     "foundation-icon-fonts": "zurb/foundation-icon-fonts",
     "foundation": "~5.2.2",
-    "moment": "~2.6.0"
+    "moment": "~2.6.0",
+    "font-awesome": "~4.0.3"
   }
 }

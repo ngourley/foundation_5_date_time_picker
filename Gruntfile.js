@@ -63,6 +63,15 @@ module.exports = function(grunt) {
           filter: 'isFile'
       }
     },
+    watch: {
+       scripts: {
+    files: ['src/foundation_calendar.js'],
+    tasks: ['clean', 'concat', 'cssmin', 'uglify', 'copy'],
+    options: {
+      interrupt: true,
+    },
+  },
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -70,6 +79,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['clean', 'concat', 'cssmin', 'uglify', 'copy']);
 };
