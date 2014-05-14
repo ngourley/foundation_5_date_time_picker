@@ -48,15 +48,20 @@ Which is exactly why I created Calendar, for the Foundation CSS framework.
 ## Requirements
 
 There are several requirements you will need to make the Calendar work.  Here's the list:
-
-- __Foundation__ -- Well, this is a foundation plugin, so we might as well include that, because without it we're nothing.
-- __Foundation Icon Fonts 3__ -- Another external dependency, but this one is used to create a better UI than would be available through my CSS skills.  The source can be [found here](http://zurb.com/playground/foundation-icon-fonts-3), but it's also included in this repository.
-- __jQuery__ -- Well, it's jQuery, it's included in the repo.
-- __date.js__ -- This is a date manipulation plugin that I didn't write myself.  It can be [found here](http://www.datejs.com/).  It's a pretty cool little tool for date manipulation.  Ideally, it would be nice to just build the date calculations necessary to make Calendar work, and leave the rest out, that way it's more light-weight not externally dependent.
-- __date-helpers.js__ -- This is my own Date modification and manipulation helpers.  They are included in the repo, and built into the minified version of foundation_calendar.js.
-- __string-helpers.js__ -- This is my own String modification and manipulation helpers.  They are included in the repo, and built into the minified version of foundation_calendar.js.
+- __Node.js & NPM__ -- If you don't have it already, you will need Node.js for this project.
+- __Bower__ -- Front-end Javascript Library Dependency Utility
+- __Foundation__ -- Core Foundation Library (Version 5)
+- __Foundation Icon Fonts 3__ -- Icon set from Foundation.
+- __jQuery__ -- Javascript utility class.
+- __date-helpers.js__ -- This is my own Date modification and manipulation helpers, John "Jocko" S. MacGregor Jr.
+- __string-helpers.js__ -- This is my own String modification and manipulation helpers, by John "Jocko" S. MacGregor Jr.
 
 ## Installation
+
+By running the install script for npm, bower depencies will be downloaded and release files will be created.
+```
+npm install
+```
 
 The index.html file in the repository gives a full description of how to install and use the plugin.  Read the &lt;head&gt; section of the html to see the file requirements, and view the file to read about how to implement the plugin.
 
