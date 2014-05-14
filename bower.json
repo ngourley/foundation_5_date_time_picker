@@ -14,8 +14,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests",
-    "dist"
+    "tests"
   ],
   "dependencies": {
     "foundation-icon-fonts": "zurb/foundation-icon-fonts",
